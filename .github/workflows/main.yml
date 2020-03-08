@@ -29,6 +29,10 @@ jobs:
     
     - name: Setup Git Infomation
       run: | 
+        mkdir -p ~/.ssh/
+        echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
         git config --global user.name 'biless' 
         git config --global user.email 'biless@qq.com'  
  
@@ -43,21 +47,20 @@ jobs:
         npm install hexo-cli -g
         npm install yuque-hexo -g
         npm install
-        npm run sync
-        hexo clean
-        hexo g
     
     - name: Deploy To Github Pages 
       env:
         Github_Pages: github.com/biless/biless.github.io.git
         Github_Token: ${{ secrets.Github_API_Token }}
       run: |  
-        git clone https://${Github_Pages} .github_pages
-        cd .github_pages
-        git checkout master
-        cd ../
-        mv .github_pages/.git/ ./public/
-        cd ./public/
-        git add .
-        git commit -F ../commit-message.log
-        git push --force --quiet "https://${Github_Token}@${Github_Pages}" master:master    
+        # git clone https://${Github_Pages} .github_pages
+        # cd .github_pages
+        # git checkout master
+        # cd ../
+        # mv .github_pages/.git/ ./public/
+        # cd ./public/
+        # git add .
+        # git commit -F ../commit-message.log
+        # git push --force --quiet "https://${Github_Token}@${Github_Pages}" master:master    
+        npm run deploy
+
