@@ -6,7 +6,8 @@
     "version": "3.9.0"
   },
   "scripts": {
-    "sync": "set YUQUE_TOKEN=VQdN1bLyHg37Hcuomsa0A08pFFlLFyjwBjSmoi5K && yuque-hexo sync",
+    "sync": "yuque-hexo sync",
+    "sync:win": "set YUQUE_TOKEN=VQdN1bLyHg37Hcuomsa0A08pFFlLFyjwBjSmoi5K && yuque-hexo sync",
     "clean:yuque": "yuque-hexo clean",
     "deploy": "npm run sync && hexo clean && hexo g -d",
     "publish": "hexo clean && hexo g -d"
