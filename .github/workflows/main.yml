@@ -44,7 +44,9 @@ jobs:
         npm install yuque-hexo -g
         npm install
         npm run sync
-        
+        hexo clean
+        hexo g
+    
     - name: Deploy To Github Pages 
       env:
         Github_Pages: github.com/biless/biless.github.io.git
