@@ -54,6 +54,7 @@ jobs:
       env:
         Github_Pages: github.com/biless/biless.github.io.git
         Github_Token: ${{ secrets.Github_API_Token }}
+        YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
       run: |  
         # git clone https://${Github_Pages} .github_pages
         # cd .github_pages
