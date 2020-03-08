@@ -8,7 +8,8 @@
   "scripts": {
     "sync": "set YUQUE_TOKEN=VQdN1bLyHg37Hcuomsa0A08pFFlLFyjwBjSmoi5K && yuque-hexo sync",
     "clean:yuque": "yuque-hexo clean",
-    "deploy": "npm run sync && hexo clean && hexo g -d"
+    "deploy": "npm run sync && hexo clean && hexo g -d",
+    "publish": "hexo clean && hexo g -d"
   },
   "yuqueConfig": {
     "postPath": "source/_posts/yuque",
