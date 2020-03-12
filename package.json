@@ -7,6 +7,7 @@
   },
   "scripts": {
     "sync": "yuque-hexo sync",
+    "sync:mac": "YUQUE_TOKEN=VQdN1bLyHg37Hcuomsa0A08pFFlLFyjwBjSmoi5K yuque-hexo sync",
     "sync:win": "set YUQUE_TOKEN=VQdN1bLyHg37Hcuomsa0A08pFFlLFyjwBjSmoi5K && yuque-hexo sync",
     "clean:yuque": "yuque-hexo clean",
     "deploy": "npm run sync && hexo clean && hexo g -d",
