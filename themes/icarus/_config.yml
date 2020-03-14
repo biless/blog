@@ -75,16 +75,12 @@ search:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment
 comment:
     # Name of the comment plugin
-    type: gitalk
-    owner: biless         # (required) GitHub user name
-    repo: blog          # (required) GitHub repository name
-    client_id: 8003bd17c2254b19e04d     # (required) OAuth application client id
-    client_secret: 8e970072648b8022d95dc2c12f715146646254b7 # (required) OAuth application client secret
-    admin: biless         # (required) GitHub repo owner and collaborators who can initialize github issues
-                            #            Can either be a string or an array.
-                            #            admin:
-                            #                - xxxxxx1
-                            #                - xxxxxx2
+    type: valine
+    app_id: qkh0NBTe1bYBcMSWjVj0tTAQ-gzGzoHsz        # (required) LeanCloud application id
+    app_key: YYHg9sikHPC523p3ySnCWfHS       # (required) LeanCloud application key
+    notify: false           # (optional) receive email notification
+    verify: false           # (optional) show verification code
+    placeholder: 开始你的评论...   # (optional) comment box placeholder text
 # Donation entries
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
 # donate:
