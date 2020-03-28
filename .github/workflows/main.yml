@@ -65,5 +65,5 @@ jobs:
         # git add .
         # git commit -F ../commit-message.log
         # git push --force --quiet "https://${Github_Token}@${Github_Pages}" master:master    
-        npm run deploy
+        npm run deploy:mac
 
