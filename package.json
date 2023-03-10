@@ -7,8 +7,8 @@
   },
   "scripts": {
     "sync": "yuque-hexo sync",
-    "sync:mac": "YUQUE_TOKEN=VQdN1bLyHg37Hcuomsa0A08pFFlLFyjwBjSmoi5K yuque-hexo sync",
-    "sync:win": "set YUQUE_TOKEN=VQdN1bLyHg37Hcuomsa0A08pFFlLFyjwBjSmoi5K && yuque-hexo sync",
+    "sync:mac": "YUQUE_TOKEN=iu37KhQTNZosciTJkLehSxQ1PmU53bW2g9DBwo0a yuque-hexo sync",
+    "sync:win": "set YUQUE_TOKEN=iu37KhQTNZosciTJkLehSxQ1PmU53bW2g9DBwo0a && yuque-hexo sync",
     "clean:yuque": "yuque-hexo clean",
     "deploy": "npm run sync && hexo clean && hexo g -d",
     "deploy:mac": "npm run sync:mac && hexo clean && hexo g -d",
